@@ -1,0 +1,53 @@
+/* Fondo negro para toda la página */
+.home-container {
+    background-color: #096fc3cf; /* Fondo negro */
+    color: black; /* Letras doradas */
+    text-align: center;
+    padding: 40px;
+    min-height: 100vh; /* Ocupa toda la pantalla */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Título principal */
+.home-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color:black;
+}
+
+/* Subtítulo */
+.home-subtitle {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: black;
+}
+
+/* Imagen */
+.home-image {
+    width: 320px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px white;
+}
+
+/* Botón de navegación */
+.home-button-container {
+    margin-top: 20px;
+}
+
+.home-button {
+    background-color:#fb3109cf;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.home-button:hover {
+    background-color: orangered;
+}

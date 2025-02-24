@@ -1,1 +1,136 @@
-/* You can add global styles to this file, and also import other style files */
+/* Fondo azul para toda la página */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white; /* Fondo azul celeste */
+    color: black; /* Letras negras */
+}
+
+/* Contenedor Principal */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar y Footer con el mismo estilo */
+.navbar, .footer {
+    background-color:#fb3109cf; /* Mismo color para ambos */
+    padding: 10px 20px;
+    border-bottom: 3px solid white; /* Línea divisoria amarilla */
+}
+
+/* Contenido de la barra de navegación */
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Logo de la barra de navegación */
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white; /* Letras negras */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Links de navegación */
+.navbar-links ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+.navbar-links a {
+    color: whitesmoke; /* Letras negras */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-links a:hover, .active-link {
+    color: white; /* Hover amarillo */
+}
+
+/* Menú Responsive */
+.menu-button {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    .menu-icon {
+        width: 30px;
+        height: 30px;
+        stroke: black; /* Icono negro */
+    }
+}
+
+/* Contenido Principal */
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Pie de Página */
+.footer {
+    text-align: center;
+    border-top: 3px solid white; /* Línea amarilla */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white; /* Letras negras */
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer-icon {
+    font-size: 1.5rem;
+    color: black; /* Iconos negros */
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-icon:hover {
+    color:orangered; /* Efecto hover amarillo */
+}
+
+.footer-subtext {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: white; /* Letras negras */
+}

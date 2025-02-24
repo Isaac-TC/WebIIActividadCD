@@ -1,0 +1,45 @@
+<div class="container mx-auto p-6">
+    <!-- Título -->
+    <h1 class="text-4xl font-bold text-center text-blue-700">Sobre Nosotros</h1>
+    <p class="text-center text-gray-600 mt-2">Conoce más sobre SkateHome y nuestro equipo.</p>
+  
+    <!-- Sección de Empresa -->
+    <div class="mt-10">
+      <h2 class="text-2xl font-semibold text-gray-800">Nuestra Historia</h2>
+      <p class="text-gray-600 mt-2">
+        SkateHome nació con la pasión por el skateboarding y el deseo de ofrecer productos de calidad a la comunidad.
+        Desde nuestros inicios, hemos trabajado para brindar los mejores artículos para skaters de todo el mundo.
+      </p>
+    </div>
+  
+    <!-- Equipo -->
+    <div class="mt-10">
+      <h2 class="text-2xl font-semibold text-gray-800 text-center">Nuestro Equipo</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+        <div *ngFor="let persona of equipo" class="text-center bg-gray-100 p-4 rounded-lg shadow-lg">
+          <img [src]="persona.imagen" alt="{{ persona.nombre }}" class="w-32 h-32 mx-auto rounded-full">
+          <h3 class="text-lg font-semibold mt-2">{{ persona.nombre }}</h3>
+          <p class="text-gray-500">{{ persona.cargo }}</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Testimonios -->
+    <div class="mt-10">
+      <h2 class="text-2xl font-semibold text-gray-800 text-center">Lo Que Dicen Nuestros Clientes</h2>
+      <div class="mt-6">
+        <div *ngFor="let testimonio of testimonios" class="bg-blue-100 p-4 rounded-lg mb-4">
+          <p class="text-gray-800 font-medium">"{{ testimonio.comentario }}"</p>
+          <p class="text-gray-600 text-sm mt-2">- {{ testimonio.cliente }}</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Botón para Volver -->
+    <div class="text-center mt-10">
+      <a routerLink="/" class="bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-blue-800">
+        Volver al Inicio
+      </a>
+    </div>
+  </div>
+  
