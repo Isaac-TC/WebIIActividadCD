@@ -1,0 +1,88 @@
+/* Contenedor principal */
+.productos-container {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+/* Título de productos */
+.productos-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff6600;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Contenedor de la tabla */
+.productos-table-container {
+    overflow-x: auto;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Tabla de productos */
+.productos-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Estilos para el encabezado de la tabla */
+.productos-table thead {
+    background-color: orange;
+    color: black;
+}
+
+.productos-table th {
+    padding: 12px;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Estilos para las filas de productos */
+.productos-table tbody tr {
+    border-bottom: 1px solid #ddd;
+    transition: background 0.3s ease-in-out;
+}
+
+.productos-table tbody tr:hover {
+    background-color: #ffe4b5;
+}
+
+/* Celdas de la tabla */
+.productos-table td {
+    padding: 12px;
+    font-size: 1rem;
+}
+
+/* Imagen de producto */
+.producto-imagen {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #ff6600;
+}
+
+/* Precio con solo el símbolo de dólar */
+.producto-precio {
+    font-weight: bold;
+    color: #008000;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .productos-table {
+        font-size: 0.9rem;
+    }
+
+    .producto-imagen {
+        width: 50px;
+        height: 50px;
+    }
+}

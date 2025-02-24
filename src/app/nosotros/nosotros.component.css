@@ -1,0 +1,65 @@
+/* Contenedor de historia y video */
+.nosotros-historia-video {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Sección de historia (lado izquierdo) */
+.nosotros-historia {
+    flex: 1;
+    text-align: left;
+    background-color: #096fc3cf;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título de sección */
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white; /* Color naranja */
+    margin-bottom: 15px;
+}
+
+/* Texto de sección */
+.section-text {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Contenedor de video (lado derecho) */
+.nosotros-video {
+    flex: 1;
+    text-align: center;
+}
+
+/* Estilos para el video */
+.video-container {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    .nosotros-historia-video {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nosotros-historia, .nosotros-video {
+        width: 100%;
+    }
+
+    .video-container {
+        max-width: 100%;
+    }
+}
